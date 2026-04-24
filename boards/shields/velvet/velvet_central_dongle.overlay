@@ -7,6 +7,8 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include "velvet.dtsi"
+#include "trackball.dtsi"
+#include "split_input_common.dtsi"
 
 / {
     chosen {
@@ -20,6 +22,10 @@
     };
 };
 
+&trackball_listener {
+    status = "okay";
+};
+
 &uart0 {
 	status = "disabled";
 };
@@ -27,6 +33,19 @@
 zephyr_udc0: &usbd {
     compatible = "nordic,nrf-usbd";
     status = "okay";
+};
+
+/* DCDC Enable for high voltage operation */
+&regulators {
+    dcdc0 {
+        status = "okay";
+    };
+};
+
+/* 32.768KHZ external crystal */
+&lfclk {
+    status = "okay";
+    clock-source = "xtal";
 };
 
 &pinctrl {
@@ -54,5 +73,10 @@ nice_view_spi: &spi0 {
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+};
+
+/* Sleep configuration - 120 minutes */
+config ZMK_SLEEP {
+    default 7200;
 };

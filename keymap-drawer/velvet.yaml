@@ -12,299 +12,754 @@ layers:
   - I
   - O
   - P
-  - {t: '=', h: +, s: +}
-  - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: ':', s: ':'}
-  - {t: '''', h: '"', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>', s: '>'}
-  - {t: /, h: '?', s: '?'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: Symbol}
-  - Alt+Ctl+$$mdi:backspace-reverse$$
-  - {t: '3', s: '#'}
-  - {t: '$$mdi:backspace-outline$$', h: Navi}
-  - {t: '$$mdi:keyboard-tab$$', h: Modify}
-  - {t: '$$mdi:keyboard-return$$', h: Modify}
-  - {t: '$$mdi:backspace-reverse$$', h: Mouse}
-  - {t: '0', s: )}
-  - Gui+L
-  - {t: '$$mdi:keyboard-space$$', h: Symbol}
+  - {t: '=', h: +}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
   Navi:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
   - Home
   - PgUp
-  - $$mdi:volume-plus$$
-  - $$mdi:brightness-5$$
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-up$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:volume-minus$$
-  - $$mdi:brightness-7$$
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - End
-  - PgDn
-  - MUTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
   Symbol:
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Esc
-  - $$mdi:apple-keyboard-caps$$
-  - Home
-  - End
-  - _
-  - {t: '-', s: _}
-  - $$mdi:apple-keyboard-shift$$
-  - PgUp
-  - PgDn
-  - INSERT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:backspace-outline$$', type: backspace}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '~'
-  - {t: '`', s: '~'}
-  - {t: '=', h: +, s: +}
-  - {t: '''', h: '"', s: '"'}
-  - {t: \, h: '|', s: '|'}
-  - $$mdi:backspace-reverse$$
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held alternate}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
   Modify:
-  - {t: ▽, type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+A
-  - Ctl+S
-  - Ctl+D
-  - Ctl+F
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - '{'
-  - '}'
-  - F1
-  - F2
-  - F3
-  - F4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held alternate}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
   Mouse:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_UP'
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_DOWN'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MCLK'
-  - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
   Flash:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-up$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - $$mdi:volume-plus$$
-  - $$mdi:brightness-5$$
-  - $$mdi:bluetooth-off$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:volume-minus$$
-  - $$mdi:brightness-4$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-combos:
-- p: [3, 4]
-  k: {t: '[', s: '{'}
-- p: [7, 8]
-  k: {t: ']', s: '}'}
-- p: [15, 16]
-  k: (
-- p: [19, 20]
-  k: )
-- p: [27, 28]
-  k: '{'
-- p: [32, 33]
-  k: '}'
-- p: [5, 6]
-  k: {t: \, s: '|'}
-- p: [17, 18]
-  k: '|'
-- p: [0, 1]
-  k: Esc
-- p: [6, 7]
-  k: +
-- p: [18, 19]
-  k: '='
-- p: [10, 11]
-  k: $$mdi:download-circle$$
-  l: [Flash]
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  Layer_6:
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  Layer_7:
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  Layer_8:
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  Layer_9:
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  Layer_10:
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  Layer_11:
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+  - {t: '▽', type: trans}
+combos: []

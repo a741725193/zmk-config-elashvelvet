@@ -9,6 +9,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_SLEEP
+    default 7200
+
 endif
 
 if ZMK_DISPLAY
@@ -45,6 +48,20 @@ endif
 if SHIELD_VELVET_CENTRAL_DONGLE || SHIELD_VELVET_PERIPHERAL_LEFT || SHIELD_VELVET_PERIPHERAL_RIGHT
 
 config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_VELVET_PERIPHERAL_LEFT || SHIELD_VELVET_PERIPHERAL_RIGHT
+
+config ZMK_KEYBOARD_DEBOUNCE
+    default 4
+
+endif
+
+if SHIELD_VELVET_CENTRAL_DONGLE
+
+config NRF_LFCLK
     default y
 
 endif
