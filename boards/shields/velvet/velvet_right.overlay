@@ -31,6 +31,21 @@
         ;
 };
 
+&trackball_listener {
+    status = "okay";
+};
+
 &trackball_split {
     device = <&trackball>;
+};
+
+&regulators {
+    dcdc0 {
+        status = "okay";
+    };
+};
+
+&lfclk {
+    status = "okay";
+    clock-source = "xtal";
 };

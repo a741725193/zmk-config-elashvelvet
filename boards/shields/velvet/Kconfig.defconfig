@@ -1,16 +1,20 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_VELVET_CENTRAL_DONGLE
+if SHIELD_VELVET_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "Velvet"
 
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
-config ZMK_SLEEP
-    default 7200
+endif
+
+if SHIELD_VELVET_LEFT || SHIELD_VELVET_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif
 
@@ -45,23 +49,15 @@ endchoice
 
 endif
 
-if SHIELD_VELVET_CENTRAL_DONGLE || SHIELD_VELVET_PERIPHERAL_LEFT || SHIELD_VELVET_PERIPHERAL_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-endif
-
-if SHIELD_VELVET_PERIPHERAL_LEFT || SHIELD_VELVET_PERIPHERAL_RIGHT
+if SHIELD_VELVET_LEFT || SHIELD_VELVET_RIGHT
 
 config ZMK_KEYBOARD_DEBOUNCE
     default 4
 
-endif
+config BOARD_ENABLE_DCDC
+    select SOC_DCDC_NRF52X
 
-if SHIELD_VELVET_CENTRAL_DONGLE
-
-config NRF_LFCLK
-    default y
+config BOARD_ENABLE_DCDC_HV
+    select SOC_DCDC_NRF52X_HV
 
 endif
