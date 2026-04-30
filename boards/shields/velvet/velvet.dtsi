@@ -9,12 +9,6 @@
 		zmk,backlight = &backlight;
 	};
 
-    EXT_POWER {
-        compatible = "zmk,ext-power-generic";
-        control-gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>;
-        init-delay-ms = <50>;
-    };
-
 	backlight: pwmleds {
 		compatible = "pwm-leds";
 		pwm_led_1: pwm_led_1 {
@@ -76,13 +70,13 @@
 
 	pwm0_default: pwm0_default {
         group1 {
-            psels = <NRF_PSEL(PWM_OUT1, 0, 27)>; // LED 1
+            psels = <NRF_PSEL(PWM_OUT1, 1, 13)>; // LED 1
            
         };
     };
     pwm0_sleep: pwm0_sleep {
         group1 {
-            psels = <NRF_PSEL(PWM_OUT1, 0, 27)>; // LED 1
+            psels = <NRF_PSEL(PWM_OUT1, 1, 13)>; // LED 1
             low-power-enable;
         };
     };
