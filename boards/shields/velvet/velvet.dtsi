@@ -9,6 +9,12 @@
 		zmk,backlight = &backlight;
 	};
 
+    EXT_POWER {
+        compatible = "zmk,ext-power-generic";
+        control-gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>;
+        init-delay-ms = <50>;
+    };
+
 	backlight: pwmleds {
 		compatible = "pwm-leds";
 		pwm_led_1: pwm_led_1 {
