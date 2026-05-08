@@ -38,16 +38,6 @@
     y-input-code = <INPUT_REL_Y>;
 };
 
-&zip_xy_transform {
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-};
-
-&zip_scroll_transform {
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-};
-
  / {
    trackball_listener: trackball_listener {
      compatible = "zmk,input-listener";
