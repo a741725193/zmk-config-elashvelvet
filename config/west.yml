@@ -25,8 +25,6 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: cormoran
       revision: main
-
-    # DYA Studio モジュール（すべて cormoran リポジトリ）
     - name: zmk-module-ble-management
       remote: cormoran
       revision: main
