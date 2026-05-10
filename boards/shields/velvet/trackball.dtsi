@@ -46,8 +46,8 @@
         irq-gpios = <&gpio1 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <1600>;
         evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_y>;
-        y-input-code = <INPUT_REL_x>;
+        x-input-code = <INPUT_REL_Y>;
+        y-input-code = <INPUT_REL_X>;
         force-awake;
     };
 };
