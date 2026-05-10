@@ -17,7 +17,7 @@
 &mouse_runtime_input_processor {
     x-codes = <INPUT_REL_Y>;
 	y-codes = <INPUT_REL_X>;
-}
+};
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
