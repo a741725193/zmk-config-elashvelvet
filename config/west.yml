@@ -16,6 +16,8 @@ manifest:
       url-base: https://github.com/a741725193
     - name: gpeye
       url-base: https://github.com/GPeye
+    - name: tokyo2006
+      url-base: https://github.com/tokyo2006
   projects:
     - name: zmk
       remote: cormoran
@@ -26,6 +28,9 @@ manifest:
       revision: main # or latest commit hash
     - name: zmk-pmw3610-driver
       remote: cormoran
+      revision: main
+    - name: zmk-driver-paw3222
+      remote: tokyo2006
       revision: main
     - name: zmk-module-ble-management
       remote: cormoran
