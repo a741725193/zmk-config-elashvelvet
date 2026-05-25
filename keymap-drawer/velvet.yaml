@@ -63,7 +63,7 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   '1':
-  - {t: ▽, type: trans}
+  - {t: '`', s: '~'}
   - F1
   - F2
   - F3
@@ -77,30 +77,30 @@ layers:
   - F10
   - F11
   - {t: ▽, type: trans}
+  - $$mdi:play-pause$$
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-plus$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '{'
+  - '}'
   - {t: ▽, type: trans}
   - F12
   - {t: ▽, type: trans}
+  - AL MY COMPUTER
+  - AL CALCULATOR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PgUp
+  - PgDn
+  - Home
+  - End
+  - INSERT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '2':
-  - {t: ▽, type: trans}
+  - '~'
   - F1
   - F2
   - F3
