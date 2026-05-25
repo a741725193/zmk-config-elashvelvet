@@ -442,25 +442,33 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(634, 308) rotate(-30.0)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">1</text>
+</a><text x="0" y="-24" class="key shifted">!</text>
 </g>
 <g transform="translate(692, 282) rotate(-15.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
 <a href="#x_x">
-<text x="0" y="24" class="key hold layer-activator">1</text>
-</a></g>
-<g transform="translate(756, 273)" class="key backspace keypos-58">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key backspace"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-9" y="-9" height="18" width="18.0" class="key backspace tap glyph mdi:backspace-outline"/>
+<text x="0" y="0" class="key tap layer-activator">2</text>
+</a><text x="0" y="-24" class="key shifted">@</text>
+</g>
+<g transform="translate(756, 273)" class="key keypos-58">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">3</text>
+</a><text x="0" y="-24" class="key shifted">#</text>
 </g>
 <g transform="translate(840, 252)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">RGUI</text>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">4</text>
+</a><text x="0" y="-24" class="key shifted">$</text>
 </g>
 <g transform="translate(896, 266)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-option"/>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">5</text>
+</a><text x="0" y="-24" class="key shifted">%</text>
 </g>
 <g class="combo combopos-0">
 <path d="M490,63 l-443,0" class="combo"/>
@@ -713,8 +721,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(692, 282) rotate(-15.0)" class="key held keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(692, 282) rotate(-15.0)" class="key trans keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(756, 273)" class="key trans keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
