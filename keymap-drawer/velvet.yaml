@@ -7,7 +7,6 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - '&mkp MCLK'
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -26,7 +25,7 @@ layers:
   - I
   - O
   - P
-  - \
+  - RGUI
   - $$mdi:apple-keyboard-caps$$
   - A
   - S
@@ -46,12 +45,13 @@ layers:
   - C
   - V
   - B
+  - '&mkp MCLK'
+  - B
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
