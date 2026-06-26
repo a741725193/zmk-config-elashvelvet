@@ -28,7 +28,7 @@ manifest:
       revision: main # or latest commit hash
     - name: zmk-pmw3610-driver
       remote: cormoran
-      revision: main
+      revision: zmk-v0.3.0.0
     - name: zmk-driver-paw3222
       remote: tokyo2006
       revision: main
