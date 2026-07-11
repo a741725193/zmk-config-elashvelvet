@@ -14,8 +14,7 @@ manifest:
       url-base: https://github.com/infused-kim
     - name: a741725193
       url-base: https://github.com/a741725193
-    - name: gpeye
-      url-base: https://github.com/GPeye
+   
   projects:
     - name: zmk
       remote: cormoran
@@ -39,9 +38,7 @@ manifest:
     - name: zmk-module-runtime-input-processor
       remote: cormoran
       revision: zmk-v0.3.0.0
-    - name: mario-peripheral-animation
-      remote: gpeye
-      revision: main
+   
     - name: zmk-tog-io
       remote: a741725193
       revision: main
