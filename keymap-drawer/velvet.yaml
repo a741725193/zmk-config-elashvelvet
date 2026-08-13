@@ -19,7 +19,7 @@ layers:
   - E
   - R
   - T
-  - '&mkp LCLK'
+  - '&mkp RCLK'
   - Y
   - U
   - I
@@ -32,7 +32,7 @@ layers:
   - D
   - F
   - G
-  - '&mkp RCLK'
+  - '&mkp MCLK'
   - H
   - J
   - K
@@ -45,7 +45,7 @@ layers:
   - C
   - V
   - B
-  - '&mkp MCLK'
+  - '&mkp LCLK'
   - B
   - N
   - M
