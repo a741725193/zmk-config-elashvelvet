@@ -96,3 +96,10 @@ nice_view_spi: &spi0 {
     pinctrl-1 = <&pwm0_sleep>;
     pinctrl-names = "default", "sleep";
 };
+
+// ZMK 4.1: NFC pins as GPIO moved from CONFIG_NFCT_PINS_AS_GPIOS=y to devicetree.
+// Required when routing the nRF52840 NFC pins (P0.09/P0.10) to other uses
+// such as SPI for the OLED (nice_view) on this firmware.
+&uicr {
+    nfct-pins-as-gpios;
+};
