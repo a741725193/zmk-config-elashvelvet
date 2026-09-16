@@ -2,44 +2,44 @@ layout: {zmk_keyboard: velvet}
 layers:
   BASE:
   - Esc
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - '&mkp RCLK'
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:backspace-outline$$', type: backspace}
-  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
   - R
   - T
-  - '&mkp MCLK'
+  - '&mkp RCLK'
   - Y
   - U
   - I
   - O
   - P
-  - \
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:backspace-outline$$', type: backspace}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
   - F
   - G
-  - '&mkp LCLK'
+  - '&mkp MCLK'
   - H
   - J
   - K
   - L
   - {t: ;, s: ':'}
-  - ''''
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-caps$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - '&mkp LCLK'
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - Esc
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -52,17 +52,17 @@ layers:
   - {t: ., s: '>'}
   '1':
   - {t: '`', s: '~'}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
   - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - F11
   - {t: ▽, type: trans}
   - $$mdi:play-pause$$
@@ -102,17 +102,17 @@ layers:
   - {t: ▽, type: trans}
   '2':
   - '~'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -152,17 +152,17 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', h: '4'}
   '3':
   - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
