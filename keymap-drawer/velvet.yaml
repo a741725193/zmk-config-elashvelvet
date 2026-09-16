@@ -47,7 +47,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - '2'
-  - \
+  - {t: \, s: '|'}
   - {t: '-', s: _}
   - {t: '=', s: +}
   '1':
