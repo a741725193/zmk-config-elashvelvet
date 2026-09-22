@@ -187,7 +187,7 @@ layers:
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
   '3':
-  - {t: ▽, type: trans}
+  - '&rmacro'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
