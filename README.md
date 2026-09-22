@@ -1,5 +1,10 @@
 # zmk-config-velvet
 
+## 改键客户端
+https://github.com/cormoran/dya-studio/releases
+
+## 网页改键
+https://studio.dya.cormoran.works/
 
 <img src="keymap-drawer/velvet.svg" >
 
