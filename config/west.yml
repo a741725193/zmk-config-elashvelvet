@@ -46,20 +46,32 @@ manifest:
           - chre
     # ---- ZMK 4.1 DYA feature modules ----
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
+      import: true
     - name: zmk-behavior-runtime-sensor-rotate
+      import: true
     - name: zmk-module-ble-management
+      import: true
     - name: zmk-module-battery-history
     - name: zmk-module-settings-rpc
+      import: true
     - name: zmk-module-runtime-input-processor
+      import: true
     - name: zmk-feature-custom-settings
+      import: true
     - name: zmk-feature-fast-keymap
+      import: true
     - name: zmk-feature-device-info
+      import: true
     - name: zmk-feature-watchdog
     - name: zmk-feature-input-stream
+      import: true
     - name: zmk-feature-module-physical-layout
+      import: true
     - name: zmk-feature-default-layer
+      import: true
       revision: codex/custom-rpc-rewrite
     - name: zmk-feature-os-detection
+      import: true
     - name: zmk-feature-runtime-macro
       import: true
     - name: zmk-feature-runtime-combo
