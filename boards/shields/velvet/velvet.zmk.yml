@@ -5,9 +5,9 @@ type: shield
 url:
 requires:
   - pro_micro
-exposes:
 features:
   - keys
+  - pointing
 siblings:
-  - velvet_left
-  - velvet_right
+  - velvet_peripheral_left
+  - velvet_peripheral_right

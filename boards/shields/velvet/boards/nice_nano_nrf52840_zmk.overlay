@@ -1,0 +1,119 @@
+/*
+ * Custom Prospector / TPS / RGB pin wiring for the Velvet dongle.
+ *
+ * This board overlay is processed AFTER prospector_adapter's own
+ * nice_nano board overlay (shield order is reversed in build.yaml),
+ * so the custom pins below override prospector_adapter's defaults.
+ *
+ *   Prospector ST7789V (SPI3 + MIPI-DBI):
+ *     SCL (SCK) = P0.19
+ *     SDA (MOSI)= P0.07
+ *     CS        = P0.17
+ *     DC        = P0.14
+ *     RES       = P0.03
+ *     BLK (PWM) = P0.23
+ *
+ *   TPS43 touchpad (I2C0):
+ *     SCL = P0.08
+ *     SDA = P0.12
+ *     RST = P0.30
+ *     INT = P0.21
+ *
+ *   WS2812 battery indicator:
+ *     DIN = P0.13 (placeholder — replace with real pin)
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/led/led.h>
+
+&pinctrl {
+    velvet_spi3_default: velvet_spi3_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 19)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 7)>;
+        };
+    };
+    velvet_spi3_sleep: velvet_spi3_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 19)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 7)>;
+            low-power-enable;
+        };
+    };
+
+    velvet_pwm1_default: velvet_pwm1_default {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 0, 23)>;
+            nordic,invert;
+        };
+    };
+    velvet_pwm1_sleep: velvet_pwm1_sleep {
+        group1 {
+            psels = <NRF_PSEL(PWM_OUT0, 0, 23)>;
+            low-power-enable;
+        };
+    };
+
+    velvet_i2c0_default: velvet_i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 8)>;
+        };
+    };
+    velvet_i2c0_sleep: velvet_i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 8)>;
+            low-power-enable;
+        };
+    };
+};
+
+disp_spi: &spi3 {
+    pinctrl-0 = <&velvet_spi3_default>;
+    pinctrl-1 = <&velvet_spi3_sleep>;
+    cs-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
+};
+
+&pwm1 {
+    pinctrl-0 = <&velvet_pwm1_default>;
+    pinctrl-1 = <&velvet_pwm1_sleep>;
+};
+
+&i2c0 {
+    status = "okay";
+    compatible = "nordic,nrf-twim";
+    pinctrl-0 = <&velvet_i2c0_default>;
+    pinctrl-1 = <&velvet_i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+
+    tps43: iqs5xx@74 {
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+        status = "okay";
+        reset-gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
+        one-finger-tap;
+        two-finger-tap;
+        scroll;
+    };
+};
+
+/ {
+    mipi_dbi {
+        dc-gpios = <&gpio0 14 GPIO_ACTIVE_HIGH>;
+        reset-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
+    };
+
+    tps43_input: tps43_input {
+        compatible = "zmk,input-listener";
+        device = <&tps43>;
+    };
+
+    battery_rgb: battery_rgb {
+        compatible = "worldsemi,ws2812-gpio";
+        chain-length = <1>;
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+        gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+    };
+};
