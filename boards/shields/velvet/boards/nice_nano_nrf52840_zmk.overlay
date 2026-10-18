@@ -16,7 +16,7 @@
  *   TPS43 touchpad (I2C0):
  *     SCL = P0.24
  *     SDA = P1.08
- *     RST = P0.30
+ *     RST = P1.04
  *     DR  = P1.07
  *
  *   WS2812 battery indicator:
@@ -86,12 +86,13 @@ disp_spi: &spi3 {
     pinctrl-0 = <&velvet_i2c0_default>;
     pinctrl-1 = <&velvet_i2c0_sleep>;
     pinctrl-names = "default", "sleep";
+    clock-frequency = <100000>;
 
     tps43: iqs5xx@74 {
         compatible = "azoteq,iqs5xx";
         reg = <0x74>;
         status = "okay";
-        reset-gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+        reset-gpios = <&gpio1 4 GPIO_ACTIVE_LOW>;
         rdy-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
         one-finger-tap;
         two-finger-tap;
