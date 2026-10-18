@@ -20,7 +20,7 @@
  *     INT = P0.21
  *
  *   WS2812 battery indicator:
- *     DIN = P0.13 (placeholder — replace with real pin)
+ *     DIN = P0.11
  */
 
 #include <zephyr/dt-bindings/gpio/gpio.h>
@@ -114,6 +114,6 @@ disp_spi: &spi3 {
         compatible = "worldsemi,ws2812-gpio";
         chain-length = <1>;
         color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-        gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+        gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
     };
 };
