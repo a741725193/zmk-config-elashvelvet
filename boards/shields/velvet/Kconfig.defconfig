@@ -17,10 +17,3 @@ config ZMK_SPLIT
     default y
 
 endif
-
-if SHIELD_VELVET_PERIPHERAL_LEFT || SHIELD_VELVET_PERIPHERAL_RIGHT
-
-config ZMK_KEYBOARD_DEBOUNCE
-    default 4
-
-endif
