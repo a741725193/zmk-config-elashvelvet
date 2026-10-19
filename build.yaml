@@ -15,7 +15,8 @@
 include:
   - board: eyelash_nano
     shield: prospector_adapter velvet_central_dongle
-    snippet: zmk-usb-logging
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: velvet_central_dongle
   - board: eyelash_nano
     shield: velvet_peripheral_left
