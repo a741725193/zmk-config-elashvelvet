@@ -21,10 +21,9 @@
         events = <0>;
     };
 
-    trackball_listener {
+    tps43_listener {
         compatible = "zmk,input-listener";
-        device = <&trackball_split>;
-        input-processors = <&mouse_runtime_input_processor>;
+        device = <&tps43_split>;
     };
 };
 

@@ -5,7 +5,9 @@
  */
 
 #include "velvet.dtsi"
-#include "trackball.dtsi"
+// Trackball — disabled on this branch (the trackpad replaces it)
+// #include "trackball.dtsi"
+#include "tps43.dtsi"
 #include "split_input_common.dtsi"
 
 &default_transform {
@@ -31,6 +33,6 @@
         ;
 };
 
-&trackball_split {
-    device = <&trackball>;
+&tps43_split {
+    device = <&tps43>;
 };

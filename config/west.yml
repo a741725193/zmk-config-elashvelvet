@@ -47,14 +47,14 @@ manifest:
     # ---- ZMK 4.1 DYA feature modules ----
 
     # Trackball: PMW3610 (custom Studio RPC driver)
-    - name: zmk-driver-pmw3610-with-custom-studio-rpc
-      import: true
-    # TPS43 touchpad (Azoteq IQS5xx) + Studio RPC
-    # Disabled on this branch to free RAM; re-enabled on the right half
-    # in the `dongle_trackpad` branch.
-    # - name: tps43-input-module
-    #   remote: tokyo2006
+    # Disabled on this branch; the trackpad replaces the trackball on the right half.
+    # - name: zmk-driver-pmw3610-with-custom-studio-rpc
     #   import: true
+    # TPS43 touchpad (Azoteq IQS5xx) + Studio RPC
+    # Moved to the right half on this branch.
+    - name: tps43-input-module
+      remote: tokyo2006
+      import: true
     # Battery-level RGB indicator LED
     - name: zmk-battery-rgb
       remote: tokyo2006

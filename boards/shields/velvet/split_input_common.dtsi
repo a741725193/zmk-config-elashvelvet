@@ -2,7 +2,16 @@
   split_inputs {
     #address-cells = <1>;
     #size-cells = <0>;
-    trackball_split: trackball_split@0 {
+    /*
+     * Trackball split input — disabled on this branch.
+     * tps43_split uses the same reg (0) so the central proxy keeps its address.
+     *
+     * trackball_split: trackball_split@0 {
+     *   compatible = "zmk,input-split";
+     *   reg = <0>;
+     * };
+     */
+    tps43_split: tps43_split@0 {
       compatible = "zmk,input-split";
       reg = <0>;
     };

@@ -1,0 +1,52 @@
+/*
+ * TPS43 (Azoteq IQS5xx) trackpad on the RIGHT half.
+ *
+ * Wiring (same pins the trackpad used on the dongle):
+ *   SCL = P0.08
+ *   SDA = P0.12
+ *   RST = P0.30
+ *   INT = P0.21
+ *
+ * NOTE: P0.08 is also the right-half kscan matrix row 3
+ * (see velvet_peripheral_right.overlay). If the trackpad is physically
+ * wired to P0.08 this matrix pin has to be re-assigned in hardware —
+ * otherwise the row and the I2C bus will fight over the pin.
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+&pinctrl {
+    velvet_i2c0_default: velvet_i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 8)>;
+        };
+    };
+    velvet_i2c0_sleep: velvet_i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 8)>;
+            low-power-enable;
+        };
+    };
+};
+
+&i2c0 {
+    status = "okay";
+    compatible = "nordic,nrf-twim";
+    pinctrl-0 = <&velvet_i2c0_default>;
+    pinctrl-1 = <&velvet_i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+    clock-frequency = <100000>;
+
+    tps43: iqs5xx@74 {
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+        status = "okay";
+        reset-gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
+        one-finger-tap;
+        two-finger-tap;
+        scroll;
+    };
+};
