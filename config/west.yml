@@ -50,9 +50,11 @@ manifest:
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
       import: true
     # TPS43 touchpad (Azoteq IQS5xx) + Studio RPC
-    - name: tps43-input-module
-      remote: tokyo2006
-      import: true
+    # Disabled on this branch to free RAM; re-enabled on the right half
+    # in the `dongle_trackpad` branch.
+    # - name: tps43-input-module
+    #   remote: tokyo2006
+    #   import: true
     # Battery-level RGB indicator LED
     - name: zmk-battery-rgb
       remote: tokyo2006

@@ -13,7 +13,8 @@
  *     RES       = P0.03
  *     BLK (PWM) = P0.23
  *
- *   TPS43 touchpad (I2C0):
+ *   TPS43 touchpad (I2C0) — disabled on the `dongle` branch to free RAM.
+ *   On `dongle_trackpad` the trackpad is wired on the right half instead:
  *     SCL = P0.08
  *     SDA = P0.12
  *     RST = P0.30
@@ -54,19 +55,24 @@
         };
     };
 
-    velvet_i2c0_default: velvet_i2c0_default {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 8)>;
-        };
-    };
-    velvet_i2c0_sleep: velvet_i2c0_sleep {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 8)>;
-            low-power-enable;
-        };
-    };
+    /*
+     * TPS43 touchpad pins — disabled on the `dongle` branch (skipped to free RAM).
+     * Re-enabled on the right half in the `dongle_trackpad` branch.
+     *
+     * velvet_i2c0_default: velvet_i2c0_default {
+     *     group1 {
+     *         psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
+     *                 <NRF_PSEL(TWIM_SCL, 0, 8)>;
+     *     };
+     * };
+     * velvet_i2c0_sleep: velvet_i2c0_sleep {
+     *     group1 {
+     *         psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
+     *                 <NRF_PSEL(TWIM_SCL, 0, 8)>;
+     *         low-power-enable;
+     *     };
+     * };
+     */
 };
 
 disp_spi: &spi3 {
@@ -80,25 +86,29 @@ disp_spi: &spi3 {
     pinctrl-1 = <&velvet_pwm1_sleep>;
 };
 
-&i2c0 {
-    status = "okay";
-    compatible = "nordic,nrf-twim";
-    pinctrl-0 = <&velvet_i2c0_default>;
-    pinctrl-1 = <&velvet_i2c0_sleep>;
-    pinctrl-names = "default", "sleep";
-    clock-frequency = <100000>;
-
-    tps43: iqs5xx@74 {
-        compatible = "azoteq,iqs5xx";
-        reg = <0x74>;
-        status = "okay";
-        reset-gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
-        rdy-gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
-        one-finger-tap;
-        two-finger-tap;
-        scroll;
-    };
-};
+/*
+ * TPS43 touchpad — disabled on the `dongle` branch (skipped to free RAM).
+ *
+ * &i2c0 {
+ *     status = "okay";
+ *     compatible = "nordic,nrf-twim";
+ *     pinctrl-0 = <&velvet_i2c0_default>;
+ *     pinctrl-1 = <&velvet_i2c0_sleep>;
+ *     pinctrl-names = "default", "sleep";
+ *     clock-frequency = <100000>;
+ *
+ *     tps43: iqs5xx@74 {
+ *         compatible = "azoteq,iqs5xx";
+ *         reg = <0x74>;
+ *         status = "okay";
+ *         reset-gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+ *         rdy-gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
+ *         one-finger-tap;
+ *         two-finger-tap;
+ *         scroll;
+ *     };
+ * };
+ */
 
 / {
     mipi_dbi {
@@ -106,10 +116,14 @@ disp_spi: &spi3 {
         reset-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
     };
 
-    tps43_input: tps43_input {
-        compatible = "zmk,input-listener";
-        device = <&tps43>;
-    };
+    /*
+     * TPS43 touchpad input listener — disabled on the `dongle` branch.
+     *
+     * tps43_input: tps43_input {
+     *     compatible = "zmk,input-listener";
+     *     device = <&tps43>;
+     * };
+     */
 
     battery_rgb: battery_rgb {
         compatible = "worldsemi,ws2812-gpio";
