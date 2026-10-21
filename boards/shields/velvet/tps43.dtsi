@@ -1,6 +1,9 @@
 /*
  * TPS43 (Azoteq IQS5xx) trackpad on the RIGHT half (this half is the central).
  *
+ * Uses I2C1: on nRF52840 I2C0 shares the peripheral instance with SPI0,
+ * which the nice!view OLED occupies.
+ *
  * Re-uses the pins of the original PMW3610 trackball connector:
  *   SCL = P0.19  (was SPI SCK)
  *   SDA = P0.24  (was SPI MOSI/MISO)
@@ -15,13 +18,13 @@
 #include <zephyr/dt-bindings/gpio/gpio.h>
 
 &pinctrl {
-    velvet_i2c0_default: velvet_i2c0_default {
+    velvet_i2c1_default: velvet_i2c1_default {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 24)>,
                     <NRF_PSEL(TWIM_SCL, 0, 19)>;
         };
     };
-    velvet_i2c0_sleep: velvet_i2c0_sleep {
+    velvet_i2c1_sleep: velvet_i2c1_sleep {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 24)>,
                     <NRF_PSEL(TWIM_SCL, 0, 19)>;
@@ -30,11 +33,11 @@
     };
 };
 
-&i2c0 {
+&i2c1 {
     status = "okay";
     compatible = "nordic,nrf-twim";
-    pinctrl-0 = <&velvet_i2c0_default>;
-    pinctrl-1 = <&velvet_i2c0_sleep>;
+    pinctrl-0 = <&velvet_i2c1_default>;
+    pinctrl-1 = <&velvet_i2c1_sleep>;
     pinctrl-names = "default", "sleep";
     clock-frequency = <100000>;
 
