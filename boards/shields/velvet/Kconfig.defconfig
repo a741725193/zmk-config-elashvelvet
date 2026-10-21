@@ -6,7 +6,7 @@ if SHIELD_VELVET_RIGHT
 config ZMK_KEYBOARD_NAME
     default "Velvet"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
@@ -18,15 +18,8 @@ config ZMK_SPLIT
 
 endif
 
-if SHIELD_VELVET_LEFT || SHIELD_VELVET_RIGHT
-
-config BOARD_ENABLE_DCDC
-    select SOC_DCDC_NRF52X
-
-config BOARD_ENABLE_DCDC_HV
-    select SOC_DCDC_NRF52X_HV
-
-endif
+# ZMK 4.1: BOARD_ENABLE_DCDC* Kconfig options are gone. Use &reg0 / &reg1
+# in the board's .dts instead — see ZMK 4.1 migration guide section 11.5.3.
 
 if ZMK_BACKLIGHT
 

@@ -5,9 +5,13 @@ type: shield
 url:
 requires:
   - pro_micro
-exposes:
 features:
   - keys
+  - trackball
+  - nice_view
+outputs:
+  - usb
+  - ble
 siblings:
   - velvet_left
   - velvet_right
