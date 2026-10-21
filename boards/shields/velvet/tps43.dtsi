@@ -11,7 +11,7 @@
  *   INT = P0.11  (was SPI CS)
  *
  * None of these pins are used by the right-half kscan matrix
- * (rows P0.10/P0.22/P0.08/P0.02, cols P1.04/P0.31/P0.29/P1.15/P1.06/P1.11).
+ * (rows P0.09/P0.10/P0.22/P0.08/P0.02, cols P1.04/P0.31/P0.29/P1.15/P1.06/P1.11).
  * The nice!view OLED uses SPI0 on P0.20/P0.17/P0.25, so there is no conflict.
  */
 
