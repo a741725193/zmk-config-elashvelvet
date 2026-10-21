@@ -18,8 +18,8 @@
  *   (see boards/shields/velvet/tps43.dtsi):
  *     SCL = P0.19
  *     SDA = P0.24
- *     RST = P0.11
- *     INT = P1.0
+ *     RST = P1.0
+ *     INT = P0.11
  *
  *   WS2812 battery indicator:
  *     DIN = P0.11
@@ -103,8 +103,8 @@ disp_spi: &spi3 {
  *         compatible = "azoteq,iqs5xx";
  *         reg = <0x74>;
  *         status = "okay";
- *         reset-gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
- *         rdy-gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
+ *         reset-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
+ *         rdy-gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
  *         one-finger-tap;
  *         two-finger-tap;
  *         scroll;

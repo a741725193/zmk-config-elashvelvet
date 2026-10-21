@@ -4,8 +4,8 @@
  * Re-uses the pins of the original PMW3610 trackball connector:
  *   SCL = P0.19  (was SPI SCK)
  *   SDA = P0.24  (was SPI MOSI/MISO)
- *   RST = P0.11  (was SPI CS)
- *   INT = P1.0   (was trackball IRQ)
+ *   RST = P1.0   (was trackball IRQ)
+ *   INT = P0.11  (was SPI CS)
  *
  * None of these pins are used by the right-half kscan matrix
  * (rows P0.09/P0.10/P0.22/P0.08/P0.02, cols P1.04/P0.31/P0.29/P1.15/P1.06/P1.11).
@@ -41,8 +41,8 @@
         compatible = "azoteq,iqs5xx";
         reg = <0x74>;
         status = "okay";
-        reset-gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
-        rdy-gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
+        reset-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
         one-finger-tap;
         two-finger-tap;
         scroll;
