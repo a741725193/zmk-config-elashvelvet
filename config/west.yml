@@ -14,6 +14,8 @@ manifest:
       url-base: https://github.com/infused-kim
     - name: gpeye
       url-base: https://github.com/GPeye
+    - name: tokyo2006
+      url-base: https://github.com/tokyo2006
   projects:
     - name: zmk
       remote: cormoran
@@ -45,7 +47,12 @@ manifest:
           - trusted-firmware-m
           - chre
     # ---- ZMK 4.1 DYA feature modules ----
-    - name: zmk-driver-pmw3610-with-custom-studio-rpc
+    # Trackball: PMW3610 — replaced by the TPS43 trackpad on this branch
+    # - name: zmk-driver-pmw3610-with-custom-studio-rpc
+    #   import: true
+    # TPS43 (Azoteq IQS5xx) trackpad + Studio RPC
+    - name: tps43-input-module
+      remote: tokyo2006
       import: true
     - name: zmk-behavior-runtime-sensor-rotate
       import: true

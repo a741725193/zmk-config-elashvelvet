@@ -4,7 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 #include "velvet.dtsi"
-#include "trackball.dtsi"
+// Trackball — replaced by the TPS43 trackpad on this branch
+// #include "trackball.dtsi"
+#include "tps43.dtsi"
 #include <behaviors/battery_history_request.dtsi>
 
 &default_transform {
@@ -28,4 +30,12 @@
         , <&gpio1 6  GPIO_ACTIVE_HIGH>
         , <&gpio1 11  GPIO_ACTIVE_HIGH>
         ;
+};
+
+/ {
+    /* TPS43 trackpad input listener (replaces the PMW3610 trackball listener) */
+    tps43_input: tps43_input {
+        compatible = "zmk,input-listener";
+        device = <&tps43>;
+    };
 };
