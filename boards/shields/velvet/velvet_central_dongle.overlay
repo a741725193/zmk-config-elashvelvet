@@ -24,6 +24,14 @@
     tps43_listener {
         compatible = "zmk,input-listener";
         device = <&tps43_split>;
+        /*
+         * Studio pointer speed/rotation for the relayed trackpad. The
+         * runtime processor is central-side state, so it must sit on this
+         * proxy listener: the dongle has no local driver and the right half
+         * has no Studio RPC. `mouse_runtime_input_processor` comes from
+         * input/processors/runtime-input-processor.dtsi (0 processor cells).
+         */
+        input-processors = <&mouse_runtime_input_processor>;
     };
 };
 
