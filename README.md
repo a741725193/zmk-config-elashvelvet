@@ -12,7 +12,7 @@ dongle is the Studio central and has no `azoteq,iqs5xx` node; DYA Studio reaches
 the trackpad through the split relay.
 
 ```
-Studio (USB) → dongle RPC (source 1)
+Studio (USB) → dongle RPC (the pad half's source)
              → RelayRequest split event
              → right half relay executor → iqs5xx over I2C
              → RelayResponse split event
