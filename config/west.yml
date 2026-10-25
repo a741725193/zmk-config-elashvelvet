@@ -54,6 +54,7 @@ manifest:
     # Moved to the right half on this branch.
     - name: tps43-input-module
       remote: tokyo2006
+      revision: feat/tps43-split-relay-main
       import: true
     # Battery-level RGB indicator LED
     - name: zmk-battery-rgb
