@@ -94,6 +94,6 @@ manifest:
       revision: main
     - name: prospector-zmk-module
       remote: tokyo2006
-      revision: feat/display-power
+      revision: main
   self:
     path: config
