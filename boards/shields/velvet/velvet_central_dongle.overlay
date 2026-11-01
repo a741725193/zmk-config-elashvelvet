@@ -31,3 +31,17 @@
 &kscan0 {
     status = "disabled";
 };
+
+/*
+ * The Prospector APDS9960 pulls in I2C0 on the eyelash_nano default pins
+ * (SDA=P0.17, SCL=P0.20).  P0.17 is also the display's CS, so I2C0 would
+ * claim the CS pin and the panel would stay dark.  The dongle uses no I2C
+ * devices (TPS43 lives on the right half), so keep I2C0 and the ALS off.
+ */
+&i2c0 {
+    status = "disabled";
+};
+
+&apds9960 {
+    status = "disabled";
+};
