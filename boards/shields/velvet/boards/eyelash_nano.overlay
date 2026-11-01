@@ -132,3 +132,9 @@ disp_spi: &spi3 {
         gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
     };
 };
+
+
+
+
+
+
