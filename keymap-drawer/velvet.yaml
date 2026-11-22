@@ -161,8 +161,8 @@ layers:
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - OUT USB
+  - OUT BLE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
